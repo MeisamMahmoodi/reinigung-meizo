@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutzerklärung — Meizo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0a0a; --bg-raised:#141414; --border:#262626;
+    --fg:#f5f5f3; --fg-dim:#8f8f8a; --accent:#34d399;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg);color:var(--fg);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  h1,h2{font-family:'Space Grotesk',sans-serif;letter-spacing:-0.02em;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 28px;}
+
+  header{border-bottom:1px solid var(--border);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0;max-width:760px;margin:0 auto;padding-left:28px;padding-right:28px;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;text-decoration:none;color:var(--fg);}
+  .brand-mark{width:22px;height:22px;background:var(--fg);border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--bg);font-size:12px;font-weight:700;}
+  .back{font-size:13px;color:var(--fg-dim);text-decoration:none;font-family:'IBM Plex Mono',monospace;}
+  .back:hover{color:var(--fg);}
+
+  main{padding:64px 0 90px;}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px;}
+  h1{font-size:32px;font-weight:600;margin-bottom:8px;}
+  .subtitle{color:var(--fg-dim);font-size:14px;margin-bottom:40px;}
+
+  /* TOC */
+  .toc{background:var(--bg-raised);border:1px solid var(--border);border-radius:6px;padding:24px 26px;margin-bottom:36px;}
+  .toc-label{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--fg-dim);text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px;}
+  .toc ol{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:9px 24px;}
+  .toc a{display:flex;gap:8px;font-size:13.5px;color:var(--fg-dim);text-decoration:none;}
+  .toc a:hover{color:var(--accent);}
+  .toc a span{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--fg-dim);width:16px;flex-shrink:0;}
+
+  section.block{background:var(--bg-raised);border:1px solid var(--border);border-radius:6px;padding:26px 28px;margin-bottom:14px;scroll-margin-top:24px;}
+  section.block h2{font-size:16px;font-weight:600;margin-bottom:14px;}
+  section.block p{font-size:14px;color:var(--fg-dim);margin-bottom:10px;}
+  section.block p:last-child{margin-bottom:0;}
+  section.block p b{color:var(--fg);font-weight:500;}
+  section.block ul{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:8px;}
+  section.block ul li{font-size:14px;color:var(--fg-dim);padding-left:16px;position:relative;}
+  section.block ul li:before{content:"—";position:absolute;left:0;color:var(--border);}
+  section.block a.inline{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-dim,rgba(52,211,153,.3));}
+  section.block a.inline:hover{border-bottom-color:var(--accent);}
+  .term{margin-bottom:12px;}
+  .term b{color:var(--fg);font-size:14px;font-weight:500;display:block;margin-bottom:2px;}
+  .term p{margin-bottom:0;}
+
+  .highlight{border-color:var(--accent);}
+  .tag-new{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--accent);border:1px solid var(--accent);border-radius:20px;padding:2px 8px;margin-left:8px;vertical-align:middle;}
+
+  footer{border-top:1px solid var(--border);padding:24px 0;}
+  .footer-note{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--fg-dim);text-align:center;}
+
+  @media(max-width:600px){
+    .toc ol{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">M</span>Meizo</a>
+    <a href="index.html" class="back">← Zurück zur Startseite</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="eyebrow">Rechtliches</div>
+  <h1>Datenschutzerklärung</h1>
+  <p class="subtitle">Stand: Juli 2026</p>
+
+  <div class="toc">
+    <div class="toc-label">Inhaltsübersicht</div>
+    <ol>
+      <li><a href="#verantwortlicher"><span>01</span>Verantwortlicher</a></li>
+      <li><a href="#uebersicht"><span>02</span>Übersicht der Verarbeitungen</a></li>
+      <li><a href="#rechtsgrundlagen"><span>03</span>Rechtsgrundlagen</a></li>
+      <li><a href="#sicherheit"><span>04</span>Sicherheitsmaßnahmen</a></li>
+      <li><a href="#kontaktformular"><span>05</span>Kontaktformular</a></li>
+      <li><a href="#hosting"><span>06</span>Hosting</a></li>
+      <li><a href="#fonts"><span>07</span>Google Fonts</a></li>
+      <li><a href="#speicherung"><span>08</span>Speicherung &amp; Löschung</a></li>
+      <li><a href="#rechte"><span>09</span>Ihre Rechte</a></li>
+      <li><a href="#begriffe"><span>10</span>Begriffsdefinitionen</a></li>
+    </ol>
+  </div>
+
+  <section class="block" id="verantwortlicher">
+    <h2>1. Verantwortlicher</h2>
+    <p><b>Meisam Mahmoodi</b><br>Gotelindenstr. 9<br>80634 München, Deutschland</p>
+    <p>E-Mail: <a class="inline" href="mailto:meisam@meizo.de">meisam@meizo.de</a><br>Telefon: +49 176 61860432</p>
+  </section>
+
+  <section class="block" id="uebersicht">
+    <h2>2. Übersicht der Verarbeitungen</h2>
+    <p>Die folgende Übersicht fasst zusammen, welche Daten zu welchem Zweck verarbeitet werden.</p>
+    <div class="term">
+      <b>Arten der verarbeiteten Daten</b>
+      <p>Kontaktdaten (Name, E-Mail, Telefon), Inhaltsdaten (Nachrichten aus dem Kontaktformular), Vertrags- und Leistungsdaten, Nutzungs- und Protokolldaten beim Aufruf der Website.</p>
+    </div>
+    <div class="term">
+      <b>Betroffene Personen</b>
+      <p>Interessenten, Kunden und sonstige Nutzer dieser Website.</p>
+    </div>
+    <div class="term">
+      <b>Zweck der Verarbeitung</b>
+      <p>Beantwortung von Anfragen, Anbahnung und Durchführung von Reinigungsdienstleistungen, technischer Betrieb der Website.</p>
+    </div>
+  </section>
+
+  <section class="block" id="rechtsgrundlagen">
+    <h2>3. Rechtsgrundlagen</h2>
+    <ul>
+      <li><b>Einwilligung</b> — Art. 6 Abs. 1 S. 1 lit. a) DSGVO</li>
+      <li><b>Vertragserfüllung</b> — Art. 6 Abs. 1 S. 1 lit. b) DSGVO, z. B. bei Anfragen über das Kontaktformular</li>
+      <li><b>Rechtliche Verpflichtung</b> — Art. 6 Abs. 1 S. 1 lit. c) DSGVO</li>
+      <li><b>Berechtigte Interessen</b> — Art. 6 Abs. 1 S. 1 lit. f) DSGVO, z. B. sicherer Betrieb der Website</li>
+    </ul>
+    <p>Ergänzend gelten nationale Datenschutzregelungen, insbesondere das Bundesdatenschutzgesetz (BDSG).</p>
+  </section>
+
+  <section class="block" id="sicherheit">
+    <h2>4. Sicherheitsmaßnahmen</h2>
+    <p>Wir treffen angemessene technische und organisatorische Maßnahmen, um ein dem Risiko entsprechendes Schutzniveau zu gewährleisten. Dazu zählt insbesondere die Verschlüsselung der Datenübertragung per TLS/SSL (HTTPS).</p>
+  </section>
+
+  <section class="block highlight" id="kontaktformular">
+    <h2>5. Kontaktformular <span class="tag-new">Diese Website</span></h2>
+    <p>Wenn Sie uns über das Kontaktformular auf dieser Website eine Anfrage senden, werden die von Ihnen eingegebenen Daten (Name, ggf. Unternehmen, E-Mail-Adresse, Nachricht) per E-Mail an uns übermittelt. Eine Speicherung auf einem Server erfolgt dabei nicht — das Formular öffnet direkt Ihr E-Mail-Programm.</p>
+    <p><b>Rechtsgrundlage:</b> Art. 6 Abs. 1 lit. b) DSGVO, sofern die Anfrage der Anbahnung eines Vertrages dient, andernfalls Art. 6 Abs. 1 lit. f) DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen).</p>
+  </section>
+
+  <section class="block" id="hosting">
+    <h2>6. Hosting</h2>
+    <p>Beim Aufruf dieser Website verarbeitet unser Hosting-Anbieter automatisch Zugriffsdaten (u.&nbsp;a. IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite) in sogenannten Server-Logfiles. Diese werden ausschließlich zur Sicherstellung eines störungsfreien Betriebs sowie zur Verbesserung des Angebots genutzt.</p>
+    <p><b>Rechtsgrundlage:</b> Art. 6 Abs. 1 lit. f) DSGVO (berechtigtes Interesse an einem sicheren und stabilen Betrieb).</p>
+  </section>
+
+  <section class="block highlight" id="fonts">
+    <h2>7. Google Fonts <span class="tag-new">Diese Website</span></h2>
+    <p>Diese Website bindet Schriftarten ("Google Fonts") ein, die von einem Server von Google bereitgestellt werden. Beim Aufruf der Seite wird dabei eine Verbindung zu Servern von Google in den USA hergestellt, wobei die IP-Adresse des aufrufenden Endgeräts übertragen wird.</p>
+    <p><b>Anbieter:</b> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland</p>
+    <p><b>Rechtsgrundlage:</b> Art. 6 Abs. 1 lit. f) DSGVO (berechtigtes Interesse an einer einheitlichen und technisch stabilen Darstellung der Website). Weitere Informationen: <a class="inline" href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></p>
+  </section>
+
+  <section class="block" id="speicherung">
+    <h2>8. Speicherung &amp; Löschung</h2>
+    <p>Wir löschen personenbezogene Daten, sobald der Zweck der Verarbeitung entfällt und keine gesetzlichen Aufbewahrungspflichten entgegenstehen. Für geschäftliche Unterlagen gelten insbesondere folgende Fristen:</p>
+    <ul>
+      <li><b>10 Jahre</b> — Bücher, Aufzeichnungen, Jahresabschlüsse (§ 147 AO, § 257 HGB)</li>
+      <li><b>8 Jahre</b> — Buchungsbelege, Rechnungen (§ 147 AO, § 257 HGB)</li>
+      <li><b>3 Jahre</b> — Allgemeine Gewährleistungs- und Schadensersatzansprüche (§§ 195, 199 BGB)</li>
+    </ul>
+  </section>
+
+  <section class="block" id="rechte">
+    <h2>9. Ihre Rechte</h2>
+    <ul>
+      <li><b>Auskunftsrecht</b> — Art. 15 DSGVO</li>
+      <li><b>Recht auf Berichtigung</b> — Art. 16 DSGVO</li>
+      <li><b>Recht auf Löschung</b> — Art. 17 DSGVO</li>
+      <li><b>Recht auf Einschränkung der Verarbeitung</b> — Art. 18 DSGVO</li>
+      <li><b>Recht auf Datenübertragbarkeit</b> — Art. 20 DSGVO</li>
+      <li><b>Widerspruchsrecht</b> — Art. 21 DSGVO</li>
+      <li><b>Beschwerderecht bei einer Aufsichtsbehörde</b> — z. B. dem Bayerischen Landesamt für Datenschutzaufsicht</li>
+    </ul>
+  </section>
+
+  <section class="block" id="begriffe">
+    <h2>10. Begriffsdefinitionen</h2>
+    <div class="term"><b>Personenbezogene Daten</b><p>Alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen.</p></div>
+    <div class="term"><b>Verarbeitung</b><p>Jeder Vorgang im Zusammenhang mit personenbezogenen Daten, z. B. Erheben, Speichern, Übermitteln oder Löschen.</p></div>
+    <div class="term"><b>Verantwortlicher</b><p>Die Stelle, die über die Zwecke und Mittel der Verarbeitung personenbezogener Daten entscheidet.</p></div>
+  </section>
+</main>
+
+<footer>
+  <p class="footer-note">© 2026 Meizo · München</p>
+</footer>
+
+</body>
+</html>
